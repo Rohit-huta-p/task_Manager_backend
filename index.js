@@ -4,7 +4,7 @@ const app = express();
 const cors = require('cors');
 app.use(cors( 
     {
-        origin: 'https://task-manager-ass.vercel.app/',
+        origin: 'https://task-manager-ass.vercel.app',
         credentials: true,
     }
         ));
