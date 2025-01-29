@@ -2,7 +2,14 @@ const express = require('express')
 const app = express();
 // cors
 const cors = require('cors');
-app.use(cors({origin: "http://localhost:5173", credentials: true}))
+app.use(cors( 
+    {
+        origin: 'https://swissnote-ass-frontend.vercel.app',
+        credentials: true,
+    }
+        ));
+
+
 // parse body to JSON
 app.use(express.json());
 
